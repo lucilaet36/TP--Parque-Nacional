@@ -1,0 +1,116 @@
+body{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    justify-content: center;
+   text-align: center;
+}
+#titulos{
+    justify-content: center;
+    text-align: center;
+}
+.imagenFondo{
+    width: 100%;
+    height: 450px;
+    background-image: url('https://www.argentina.gob.ar/sites/default/files/rnec_bnitez_paisaje_ph_parquesnacionales.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+   
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#parrafo{
+    margin: 30px;
+}
+ul{
+    list-style: none;
+    font-size: 0;
+}
+
+li{
+    display: inline-block;
+    width: 33%;
+    position: relative;
+    font-size: 14px;
+}
+
+ul ul{
+    position: absolute;
+    display: none;
+    background-color: #4a6a29;
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #4a6a29;
+    text-align: center;
+}
+
+ul li:hover{
+    background-color: #59a30e;
+}
+#video{
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-contenedor{
+    background: linear-gradient(to top, #001a33, #003366);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; 
+    margin: 20px;
+}
+
+.social a:hover img {
+    transform: scale(1.2);
+}
+
+.opciones a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.opciones a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 5px;
+    justify-content: center;
+}
