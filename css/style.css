@@ -1,5 +1,5 @@
 body{
-
+    background: linear-gradient(to top,  #4a6a29, #5597139c, #367e54);
 }
 *{
     margin: 0;
@@ -73,7 +73,7 @@ nav{
 }
 
 ul li:hover{
-    background-color: #59a30e;
+    background-color: #5597139c;
 }
 #video{
     justify-content: center;
@@ -88,7 +88,21 @@ ul li:hover{
     padding: 20px;
     text-align: center;
 }
+#ubi{
+    text-align: center;
+    justify-content: center;
+}
+#contacto{
+    margin-left: 550px;
+}
+#contactarnos{
+    margin-left: 500px;
+}
+#ubicacion{
+    justify-content: center;
+    text-align: center;
 
+}
 .social img {
     width: 40px;
     height: 40px;
@@ -110,7 +124,3 @@ ul li:hover{
     text-decoration: underline;
 }
 
-.copyright {
-    margin-top: 5px;
-    justify-content: center;
-}
