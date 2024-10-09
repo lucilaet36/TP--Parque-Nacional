@@ -29,7 +29,7 @@ body{
     align-items: center;
   }
 .menu{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
 }
@@ -93,10 +93,10 @@ ul li:hover{
     justify-content: center;
 }
 #contacto{
-    margin-left: 550px;
+    margin-left: 500px;
 }
 #contactarnos{
-    margin-left: 500px;
+    margin-left: 450px;
 }
 #ubicacion{
     justify-content: center;
