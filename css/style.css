@@ -99,10 +99,10 @@ ul li:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr;
     grid-template-areas: 
-    'parrafo parrafo parrafo'
-    'video video video'
-    'informacion informacion informacion'
-    'ubicacion ubicacion ubicacion';
+        'parrafo parrafo parrafo'
+        'video video video'
+        'informacion informacion informacion'
+        'ubicacion ubicacion ubicacion';
     color: white;
     padding: 20px;
     text-align: center;
@@ -168,15 +168,15 @@ ul li:hover{
     text-decoration: underline;
 }
 
-@media screen and (min-width: 320px ) and (max-width: 767px){
+@media screen and (max-width: 767px){
     #grid-container{
         grid-template-rows: 1fr 1fr 3fr 1fr ;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             'parrafo parrafo parrafo'
-            'video video video'
+            'video video video '
             'informacion informacion informacion'
             'ubicacion ubicacion ubicacion';
-        background-color: blueviolet;
     }
 }
+
