@@ -2,6 +2,7 @@ body{
     background: linear-gradient(to top,  #4a6a29, #5597139c, #367e54);
 }
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -34,7 +35,17 @@ body{
     justify-content: center;
 }
 #parrafo{
-    margin: 30px;
+
+    margin-left: 8%;
+    margin-right: 8%;
+    border: solid 16px;
+    border-color: #367e54b4;
+    width: 84%;
+    height: 190px;
+    background-color:#367e54e1;
+    align-items: center;
+    justify-content: center;
+    grid-area: parrafo;
 }
 ul{
     list-style: none;
@@ -51,7 +62,7 @@ li{
 ul ul{
     position: absolute;
     display: none;
-    background-color: #4a6a29;
+    background-color: transparent;
 }
 
 ul ul li{
@@ -68,30 +79,53 @@ li a{
 }
 
 nav{
-    background-color: #4a6a29;
+    background-color: transparent;
     text-align: center;
 }
 
 ul li:hover{
-    background-color: #5597139c;
+    background-color: #4c88109c;
 }
 #video{
     justify-content: center;
     text-align: center;
+    margin: 30px;
+    grid-area: video;
 }
 
 .footer-contenedor{
+    margin: 30px;
     background: linear-gradient(to top, #001a33, #003366);
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-areas: 
+    'parrafo parrafo parrafo'
+    'video video video'
+    'informacion informacion informacion'
+    'ubicacion ubicacion ubicacion';
     color: white;
     padding: 20px;
     text-align: center;
 }
+#informacion{
+    margin-left: 8%;
+    margin-right: 8%;
+    border: solid 16px;
+    border-color: #367e54b4;
+    width: 84%;
+    height: 190px;
+    background-color:#367e54e1;
+    align-items: center;
+    justify-content: center;
+    grid-area: informacion;
+}
 #ubi{
     text-align: center;
     justify-content: center;
+    grid-area: ubicacion;
 }
+
+
 #contacto{
     margin-left: 500px;
 }
@@ -103,11 +137,15 @@ ul li:hover{
     text-align: center;
 
 }
+#redes{
+    margin: 30px;
+}
 .social img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease; 
     margin: 20px;
+    border-radius: 10px;
 }
 
 .social a:hover img {
@@ -124,3 +162,14 @@ ul li:hover{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1023px){
+    #grid-container{
+        grid-template-rows: 1fr 1fr 3fr 1fr ;
+        grid-template-areas: 
+            'parrafo parrafo parrafo'
+            'video video video'
+            'informacion informacion informacion'
+            'ubicacion ubicacion ubicacion';
+        background-color: blueviolet;
+    }
+}
